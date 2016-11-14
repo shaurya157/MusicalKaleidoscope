@@ -2,7 +2,7 @@
 
 ### Background
 
-Musical Kaleidoscope is an interactive musical player which lets you visualize the songs your are playing on your keyboard through a Kaleidoscope. The purpose of this project is to make the experience of playing music more vibrant not just through sound but also through colors on the screen.  
+Musical Kaleidoscope is an interactive musical player which lets you visualize the songs you are playing on your keyboard through a Kaleidoscope. The purpose of this project is to make the experience of playing music more vibrant not just through sound but also through colors on the screen.  
 
 ### Functionality & MVP  
 
@@ -60,3 +60,5 @@ This project will be implemented with the following technologies:
 There are many directions this cellular automata engine could eventually go. Some anticipated updates are:
 
 - [ ] Fractal design along with Kaleidoscopic design
+- [ ] Allow the user to rotate the Kaleidoscope
+- [ ] Store their creation to share with their friends
