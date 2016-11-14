@@ -32,7 +32,7 @@ This project will be implemented with the following technologies:
 
 ### Implementation Timeline
 
-**Day 1**: Lean all I can about the `easel.js` library and have a basic canvas working.
+**Day 1**: Lean all about the `easel.js` library and have a basic canvas working.
 
 - Research about the `easel.js` library
 - Get basic canvas working
