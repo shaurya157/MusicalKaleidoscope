@@ -28,37 +28,35 @@ This project will be implemented with the following technologies:
 - Vanilla JavaScript and `jquery` for overall structure and logic,
 - `Easel.js` with `HTML5 Canvas` for DOM manipulation and rendering,
 - Webpack to bundle and serve up the various scripts,
-- `howler.js` to implement the different sounds.
+- `howler.js` to implement sound.
 
 ### Implementation Timeline
 
-**Day 1**: Setup all necessary Node modules, including getting webpack up and running and `Easel.js` installed.  Create `webpack.config.js` as well as `package.json`.  Write a basic entry file and the bare bones of all 3 scripts outlined above.  Learn the basics of `Easel.js`.  Goals for the day:
+**Day 1**: Lean all I can about the `easel.js` library and have a basic canvas working.
 
-- Get a green bundle with `webpack`
-- Learn enough `Easel.js` to render an object to the `Canvas` element
+- Research about the `easel.js` library
+- Get basic canvas working
+- Set the skeleton for the days to come
+- (bonus) work on day 2 material
 
-**Day 2**: Dedicate this day to learning the `Easel.js` API.  First, build out the `Cell` object to connect to the `Board` object.  Then, use `board.js` to create and render at least the square grid, ideally all 3 grid types.  Build in the ability to toggle the live/dead states on click for each cell.  Goals for the day:
+**Day 2**: Day 2 will be dedicated to learning how to make Kaleidoscope design using easel as well as to get a bare minimum of different colors showing up on the screen in Kaleidoscopic design.
 
-- Complete the `cell.js` module (constructor, update functions)
-- Render a square grid to the `Canvas` using `Easel.js`
-- Make each cell in the grid clickable, toggling the state of the square on click
-- Do the same for triangular and hexagonal grids
+- Render colors on screen
+- Implement Kaleidoscope
+- Render colors in a Kaleidoscopic design
 
-**Day 3**: Create the automata logic backend.  Build out modular functions for handling the different grid types along with their unique neighbor checks and rule sets.  Incorporate the automata logic into the `Board.js` rendering.  Goals for the day:
+**Day 3**: Use the `howler.js` api. Figure everything about sound rendering and get a sounds to play using the keyboard.
 
-- Export an `Automata` object with correct type and handling logic
-- Have a functional grid on the `Canvas` frontend that correctly handles iterations from one generation of the game to the next
+- Have sounds play
+- Assign each possible keystroke to a sound.
 
+**Day 4**: Connect the sounds to colors and make the Kaleidoscope work.
 
-**Day 4**: Install the controls for the user to interact with the game.  Style the frontend, making it polished and professional.  Goals for the day:
-
-- Create controls for game speed, stop, start, reset, and shape type
-- Have a styled `Canvas`, nice looking controls and title
-- If time: include buttons on the side to toggle the color scheme of the cells
-
+- Assign each possible keystroke to a color
+- Working MVP of keystrokes playing both music and making colors appear on the screen in a Kaleidoscope design
 
 ### Bonus features
 
-There are many directions this cellular automata engine could eventually go.  Some anticipated updates are:
+There are many directions this cellular automata engine could eventually go. Some anticipated updates are:
 
 - [ ] Fractal design along with Kaleidoscopic design
