@@ -59,6 +59,7 @@ This project will be implemented with the following technologies:
 
 There are many directions this cellular automata engine could eventually go. Some anticipated updates are:
 
+- [ ] Play sample music to see the Kaleidoscope being created automatically
 - [ ] Fractal design along with Kaleidoscopic design
 - [ ] Allow the user to rotate the Kaleidoscope
 - [ ] Store their creation to share with their friends

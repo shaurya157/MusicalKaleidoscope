@@ -4,10 +4,13 @@ module.exports = {
   output: {
   	filename: "./lib/bundle.js"
   },
+  resolve: {
+    extensions: ['', '.js', '.jsx']
+  },
   module: {
     loaders: [
       {
-        test: [/\.jsx?$/, /\.js?$/],
+        test: /\.jsx?$/,
         exclude: /(node_modules|bower_components)/,
         loader: 'babel',
         query: {
@@ -16,8 +19,5 @@ module.exports = {
       }
     ]
   },
-  devtool: 'source-maps',
-  resolve: {
-    extensions: ["", ".js", ".jsx" ]
-  }
+  devtool: 'source-maps'
 };
