@@ -1,8 +1,7 @@
-* { margin: 0; padding: 0;}
-
-body, html { height:100%; }
-
-#kaleidoscope-canvas {
-  height:100%;
-  width: 100%;
-}
+body {
+			background-color: #111;
+			font-family: Arial, sans-serif;
+			font-size: 12pt;
+			text-align: center;
+			color: #FFF;
+		}
