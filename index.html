@@ -2,81 +2,14 @@
 <html>
 <head>
 	<title>EaselJS Kaleidoscope Demo</title>
-	<style>
-		body {
-			background-color: #111;
-			font-family: Arial, sans-serif;
-			font-size: 12pt;
-			text-align: center;
-			color: #FFF;
-		}
-	</style>
+	<link rel="stylesheet" href="./stylesheets/reset.css">
 </head>
 <body>
 	<canvas id="canvas" width="800" height="800">
 	</canvas><br>
 
 <script src="http://code.createjs.com/createjs-2013.02.12.min.js"></script>
-<script src="lib/kaleidoscope.js"></script><script>
-	let c = createjs;
-	let queue, radius, stage;
-
-	function run() {
-		stage = new c.Stage("canvas");
-		let stageWidth = stage.canvas.width;
-		let stageHeight = stage.canvas.height;
-
-		// calculate the radius of the kaleidoscope:
-		radius = stageWidth/2-10;
-
-
-    let circle1 = new createjs.Shape();
-    let circle2 = new createjs.Shape();
-    let circle3 = new createjs.Shape();
-    let circle4 = new createjs.Shape();
-    circle1.graphics.beginFill("DeepSkyBlue").drawCircle(75, 75, 25);
-    // circle1.x = 75;
-    // circle1.y = 75;
-    circle2.graphics.beginFill("red").drawCircle(25, 25, 25);
-    // circle2.x = 25;
-    // circle2.y = 25;
-    circle3.graphics.beginFill("green").drawCircle(90, 90, 15);
-    // circle3.x = 90;
-    // circle3.y = 90;
-    circle4.graphics.beginFill("brown").drawCircle(50, 90, 20);
-    // circle4.x = 150;
-    // circle4.y = 150;
-
-
-    container = new createjs.Container();
-    container.height = 200;
-    container.width = 200;
-    container.addChild(circle1, circle2, circle3, circle4)
-		// set the center point:
-		container.regX = container.width/2;
-		container.regY = container.height/2;
-		// scale to fill the radius:
-		container.scaleX = radius/container.width*2;
-		container.scaleY = radius/container.height*2;
-
-		// create the kaleidoscope:
-		kaleidoscope = stage.addChild(new Kaleidoscope(radius, container, 6, [10]));
-    window.stage = stage;
-		kaleidoscope.rotation = 18; // straighten it (necessary because of complex pattern)
-		// center on the stage:
-		kaleidoscope.x = stageWidth/2;
-		kaleidoscope.y = stageHeight/2;
-
-		createjs.Ticker.addEventListener("tick", tick);
-	}
-
-  run();
-
-  createjs.Ticker.setFPS(40);
-	function tick() {
-		container.rotation += 1;
-		stage.update();
-	}
+<script type="text/javascript" src='lib/bundle.js'>
 
 </script>
 </body>
