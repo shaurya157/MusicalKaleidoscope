@@ -2,15 +2,24 @@
 <html>
 <head>
 	<title>EaselJS Kaleidoscope Demo</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="./stylesheets/reset.css">
 </head>
 <body>
+	<div class="description">
+		<span>Musical Kaleidoscope</span>
+		<img id='controls-icon'
+		src="http://res.cloudinary.com/djv7nouxz/image/upload/v1479324048/menu-black-circular-button_ecdrif.png" alt="Menu">
+		<div class='controls'>
+			Seams: <input type="text" id='seams' value="0"></input>
+		</div>
+	</img>
+	</div>
 	<canvas id="canvas" width="800" height="800">
 	</canvas><br>
 
 <script src="http://code.createjs.com/createjs-2013.02.12.min.js"></script>
 <script type="text/javascript" src='lib/bundle.js'>
-
 </script>
 </body>
 </html>

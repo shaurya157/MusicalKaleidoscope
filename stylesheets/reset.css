@@ -1,7 +1,59 @@
+/*html, body, header, nav, h1, a,
+ul, li, strong, main, button, i,
+section, img, div, h2, p, form,
+fieldset, label, input, textarea,
+span, article, footer, time, small {
+ margin: 0;
+ padding: 0;
+ border: 0;
+ outline: 0;
+ font: inherit;
+ color: inherit;
+ text-align: inherit;
+ text-decoration: inherit;
+ vertical-align: inherit;
+ box-sizing: inherit;
+ background: transparent;
+}*/
+
 body {
-			background-color: #111;
-			font-family: Arial, sans-serif;
-			font-size: 12pt;
-			text-align: center;
-			color: #FFF;
-		}
+	background-color: #111;
+	font-family: Arial, sans-serif;
+	font-size: 12pt;
+	text-align: center;
+	color: #FFF;
+}
+
+.description {
+	margin-top: 50px;
+}
+.description span {
+	margin: 0 auto;
+	font-size: 30px;
+}
+
+.description img{
+	width: auto;
+	height: 30px;
+	float: right;
+	padding-right: 10px;
+	position: absolute;
+	right: 0;
+	cursor: pointer;
+}
+
+.controls {
+	visibility: hidden;
+	height: 300px;
+	width: 190px;
+	position: absolute;
+	right: 0;
+	margin-right: 10px;
+	padding: 10px;
+	background-color: whitesmoke;
+}
+
+.showing {
+	visibility: visible;
+	color: black;
+}
