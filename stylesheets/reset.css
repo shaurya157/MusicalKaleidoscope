@@ -18,7 +18,7 @@ span, article, footer, time, small {
 
 body {
 	background-color: #111;
-	font-family: 'Roboto', Arial, sans-serif;
+	font-family: 'EB Garamond', Arial, sans-serif;
 	font-size: 12px;
 	text-align: center;
 	color: #FFF;
@@ -30,6 +30,7 @@ body {
 
 .description {
 	margin-top: 50px;
+	font-family: 'Quicksand', Arial, sans-serif;
 }
 .description span {
 	margin: 0 auto;
@@ -59,6 +60,7 @@ body {
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: flex-start;
+	font-family: 'EB Garamond', Arial, sans-serif;
 }
 
 .showing {
