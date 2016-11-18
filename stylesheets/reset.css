@@ -18,10 +18,14 @@ span, article, footer, time, small {
 
 body {
 	background-color: #111;
-	font-family: Arial, sans-serif;
-	font-size: 12pt;
+	font-family: 'Roboto', Arial, sans-serif;
+	font-size: 12px;
 	text-align: center;
 	color: #FFF;
+	/*display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;*/
 }
 
 .description {
@@ -36,7 +40,7 @@ body {
 	width: auto;
 	height: 30px;
 	float: right;
-	padding-right: 10px;
+	padding-right: 45px;
 	position: absolute;
 	right: 0;
 	cursor: pointer;
@@ -51,9 +55,26 @@ body {
 	margin-right: 10px;
 	padding: 10px;
 	background-color: whitesmoke;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
 }
 
 .showing {
 	visibility: visible;
 	color: black;
+}
+
+.description span {
+	color: red;
+}
+.instructions {
+	display: block;
+	font-size: 16px;
+	margin-top: 10px;
+}
+
+.disclaimer {
+	font-size: 10px;
 }

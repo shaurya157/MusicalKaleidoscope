@@ -2,8 +2,11 @@
 <html>
 <head>
 	<title>EaselJS Kaleidoscope Demo</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="./stylesheets/reset.css">
+	<script src="https://code.createjs.com/createjs-2013.02.12.min.js"></script>
+	<script type="text/javascript" src='lib/bundle.js'></script>
 </head>
 <body>
 	<div class="description">
@@ -11,16 +14,28 @@
 		<img id='controls-icon'
 		src="https://res.cloudinary.com/djv7nouxz/image/upload/v1479324048/menu-black-circular-button_ecdrif.png" alt="Menu">
 		<div class='controls'>
-			Seams: <input type="text" id='seam' value="1"></input>
-			Mirrors: <input type="text" id='mirror' value="6"></input>
+			Seams: Overlap of mirrors
+			<input type="text"
+										id='seam'
+										value="1"
+										placeholder="Change overlap of mirrors"></input>
+			Mirrors: # of mirrors
+			<input type="text" id='mirror' value="6"></input>
+			<div>
+				Rotation: <input type="radio" name="rotation" value="1" checked='checked'> Slow
+									<input type="radio" name="rotation" value="2"> Fast
+			</div>
+			<div>
+				Intstrument:<input type="radio" name="instrument" value="Piano" checked='checked'> Piano
+										<input type="radio" name="instrument" value="Violin"> Violin
+			</div>
+			<button type="button" id="reset">Reset</button>
+			<div class='disclaimer'>*Press enter on input to execute</div>
 		</div>
 	</img>
 	</div>
+	<span class='instructions'>Go ahead, press some keys. Watch the magic happen!</span>
 	<canvas id="canvas" width="800" height="800">
 	</canvas><br>
-
-<script src="https://code.createjs.com/createjs-2013.02.12.min.js"></script>
-<script type="text/javascript" src='lib/bundle.js'>
-</script>
 </body>
 </html>
